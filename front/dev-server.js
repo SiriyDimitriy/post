@@ -13,7 +13,7 @@ app.get('/insulation.html', (req, res) => res.sendFile(path.join(__dirname + '/i
 app.get('/profnastil.html', (req, res) => res.sendFile(path.join(__dirname + '/profnastil.html')));
 app.get('/additionalElements.html', (req, res) => res.sendFile(path.join(__dirname + '/additionalElements.html')));
 app.get('/foldedRoof.html', (req, res) => res.sendFile(path.join(__dirname + '/foldedRoof.html')));
-app.get('/fence.html', (req, res) => res.sendFile(path.join(__dirname + '/fence.html')));
+app.get('/fence.html', (req, res) => res.sendFile(path.join(__dirname + '/index.html')));
 app.get('/siding.html', (req, res) => res.sendFile(path.join(__dirname + '/siding.html')));
 app.get('/watering.html', (req, res) => res.sendFile(path.join(__dirname + '/watering.html')));
 

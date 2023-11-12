@@ -57,7 +57,7 @@ const AdditionalProduction = React.memo(({landingMode}) => {
             name: 'Євроштакетник',
             icon: '/images/landing/production/fence.png',
             landingMode: 'fence',
-            link: '/fence.html'
+            link: '/index.html'
         },
     ];
 

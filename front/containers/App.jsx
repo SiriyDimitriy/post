@@ -27,47 +27,47 @@ import SubcatalogPage from './SubcatalogPage';
 })
 class App extends React.Component {
 
-    componentDidMount() {
-        // this.props.fetchContacts();
-        // this.props.fetchItemPropertiesNames();
-
-        window.location.replace('http://budmark.com.ua/metalTail.html');
-    }
+    // componentDidMount() {
+    //     // this.props.fetchContacts();
+    //     // this.props.fetchItemPropertiesNames();
+    //
+    //     window.location.replace('http://budmark.com.ua/metalTail.html');
+    // }
 
     render() {
-        // return [
-        //     <div className={styles.container}>
-        //         <div className={styles.info}>
-        //             ⚠️ Мы являемся <b>заводом изготовителем</b> профнастила, металлочерепицы (матовое и глянцовое покрытие),
-        //             блок-хаус и делаем изгибочные изделия (уголки, коньки, планки и тд..)
-        //
-        //             У нас вы можете купить профнастил и металлочерепицу а также все доборные элементы с украинского, европейского металла.
-        //
-        //             Длина листа, тип покрытия, цвет профнастила и металлочерепицы - любая по требованию клиента.
-        //
-        //             За более детальной информацией звоните по телефону указанному на сайте !
-        //         </div>
-        //         <div className={styles.header}><HeaderMenu/></div>
-        //         <div className={styles.body}>
-        //                 <Switch>
-        //                     <Route exact path='/'
-        //                              component={LandingPage}/>
-        //                     <Route exact path='/contacts'
-        //                            component={ContactsPage}/>
-        //                     <Route path='/items' exact={true}>
-        //                         <CatalogPage/>
-        //                     </Route>
-        //                     <Route path='/items/parent/:item'>
-        //                         <SubcatalogPage/>
-        //                     </Route>
-        //                     <Route path='/items/:item'
-        //                            component={DataItemPage}/>
-        //                 </Switch>
-        //         </div>
-        //         <Footer/>
-        //     </div>,
-        //     <MagnifyingPopup/>
-        // ];
+        return [
+            <div className={styles.container}>
+                <div className={styles.info}>
+                    ⚠️ Мы являемся <b>заводом изготовителем</b> профнастила, металлочерепицы (матовое и глянцовое покрытие),
+                    блок-хаус и делаем изгибочные изделия (уголки, коньки, планки и тд..)
+
+                    У нас вы можете купить профнастил и металлочерепицу а также все доборные элементы с украинского, европейского металла.
+
+                    Длина листа, тип покрытия, цвет профнастила и металлочерепицы - любая по требованию клиента.
+
+                    За более детальной информацией звоните по телефону указанному на сайте !
+                </div>
+                <div className={styles.header}><HeaderMenu/></div>
+                <div className={styles.body}>
+                        <Switch>
+                            <Route exact path='/'
+                                     component={LandingPage}/>
+                            <Route exact path='/contacts'
+                                   component={ContactsPage}/>
+                            <Route path='/items' exact={true}>
+                                <CatalogPage/>
+                            </Route>
+                            <Route path='/items/parent/:item'>
+                                <SubcatalogPage/>
+                            </Route>
+                            <Route path='/items/:item'
+                                   component={DataItemPage}/>
+                        </Switch>
+                </div>
+                <Footer/>
+            </div>,
+            <MagnifyingPopup/>
+        ];
         return null;
     }
 }
