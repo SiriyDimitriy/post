@@ -1,0 +1,14 @@
+To start application you need:
+
+1. Clone app
+2. ```cd front```
+3. Run ```npm install```
+4. Run ```npm run node-server```
+5. Run ```npm run build-watch```
+6. See localhost:4004 in browser
+
+
+TODO: use existing CSS and LESS variables (for fonts, backgrounds, etc)
+TODO: use BEM for .less files
+TODO: refactor Slider - get rid of twice setState, all_mixin(), downloading svg by external url, !important, pixels in favour of rem, hardcoded width and height
+TODO: use one folder for svg instead of 2 different places

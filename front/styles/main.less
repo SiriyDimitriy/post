@@ -1,0 +1,61 @@
+@import "__colors";
+
+html {
+  font-size: 24px;
+  color: var(--text-color);
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:active {
+    color: inherit;
+  }
+}
+
+select, textarea, input, button, select:focus, textarea:focus, input:focus, button:focus {
+  outline: none;
+  border: none;
+  font-size: 0.8rem;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1800px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+}

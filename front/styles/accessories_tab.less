@@ -1,0 +1,51 @@
+// for accessories:
+.accessoriesContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  .accessoriesItem {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    box-shadow: 0px 0px 0.5rem 0.1rem var(--text-color);
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+
+    .image {
+      width: 120px;
+      height: 120px;
+      border: 1px solid var(--text-color);
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.75rem;
+      margin-top: 0.2rem;
+    }
+
+    .additionalInfo {
+      font-size: 0.75rem;
+      text-align: center;
+    }
+
+    .Price {
+      font-weight: bold;
+      font-size: 0.75rem;
+      text-align: center;
+      color: var(--promo-color);
+      margin: 0.5rem 0;
+    }
+
+    .Call {
+      background-color: var(--promo-color);
+      color: var(--text-color-negative);
+      font-size: 1rem;
+      height: 2rem;
+    }
+  }
+}

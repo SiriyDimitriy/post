@@ -1,0 +1,48 @@
+// for tabs:
+.colorsContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  .color {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+
+    .colorPick {
+      width: 110px;
+      height: 80px;
+      border-radius: 0.25rem;
+
+      @media only screen and (max-width: 1000px) {
+        width: 100px;
+        height: 100px;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    .ral {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .name {
+      font-style: italic;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .coating {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}

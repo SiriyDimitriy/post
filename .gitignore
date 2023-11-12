@@ -1,0 +1,7 @@
+*.iml
+.idea/
+
+front/node_modules
+front/package-lock.json
+front/bin
+__snapshots__

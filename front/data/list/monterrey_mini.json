@@ -1,0 +1,217 @@
+{
+    "id": "monterrey_mini",
+    "name": "М/Ч Монтеррей мини",
+    "promo": "Бесплатная доставка от 8 штук",
+    "parent": "metal_tale",
+    "parent_name": "Металочерепица",
+    "description_items": {
+      "common_width": "1195мм",
+      "effective_width": "1100мм",
+      "wave_step": "350мм",
+      "cross_stamp_height": "15мм",
+      "wave_height": "25мм",
+      "steel_sickness": "0,4мм/ 0,45мм/ 0,5мм/ 0,52мм",
+      "min_length": "450мм",
+      "max_length": "12000мм",
+      "min_angle": "14 градусів"
+    },
+    "price_cards": [
+      {
+        "producer": "Китай SUTOR",
+        "steel_sickness": "0,4мм",
+        "anticorrosion_coating": "ZN 100гр/м.кв",
+        "polymer_coating": "Глянцевый полиэстер (PE)",
+        "price": "от 89грн/м.кв",
+        "logoSrc": "/images/producers/sutor.jpg"
+      },
+      {
+        "producer": "Китай SUTOR",
+        "steel_sickness": "0,4мм",
+        "anticorrosion_coating": "ZN 100гр/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE)",
+        "price": "от 101грн/м.кв",
+        "logoSrc": "/images/producers/sutor.jpg"
+      },
+      {
+        "producer": "Китай SUTOR",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 100гр/м.кв",
+        "polymer_coating": "Глянцевый полиэстер (PE)",
+        "price": "от 101грн/м.кв",
+        "logoSrc": "/images/producers/sutor.jpg"
+      },
+      {
+        "producer": "Китай SUTOR",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 100гр/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE)",
+        "price": "от 108грн/м.кв",
+        "logoSrc": "/images/producers/sutor.jpg"
+      },
+      {
+        "producer": "Украина Металлы и Полимеры",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 100гр/м.кв",
+        "polymer_coating": "Глянцевый полиэстер (PE)",
+        "price": "от 117грн/м.кв",
+        "logoSrc": "/images/producers/metipol.jpg"
+      },
+      {
+        "producer": "Украина Металлы и Полимеры",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 100гр/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE)",
+        "price": "от 120грн/м.кв",
+        "logoSrc": "/images/producers/metipol.jpg"
+      },
+      {
+        "producer": "Украина Металлы и Полимеры",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 100гр/м.кв",
+        "polymer_coating": "2-х сторонний матовый или глянцевый полиэстер",
+        "price": "от 127грн/м.кв",
+        "logoSrc": "/images/producers/metipol.jpg"
+      },
+      {
+        "producer": "Юж. Корея Dongbu Steel",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Глянцевый полиэстер (PE)",
+        "price": "от 127грн/м.кв",
+        "logoSrc": "/images/producers/dongbu_steel.jpg"
+      },
+      {
+        "producer": "Юж. Корея Dongbu Steel",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), кварцмат",
+        "price": "от 129грн/м.кв",
+        "logoSrc": "/images/producers/dongbu_steel.jpg"
+      },
+      {
+        "producer": "Юж. Корея Dongbu Steel",
+        "steel_sickness": "0,5мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Глянцевый полиэстер (PE)",
+        "price": "от 140грн/м.кв",
+        "logoSrc": "/images/producers/dongbu_steel.jpg"
+      },
+      {
+        "producer": "Юж. Корея Dongbu Steel",
+        "steel_sickness": "0,5мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Глянцевый полиэстер (PE), кварцмат, клаудмат",
+        "price": "от 143грн/м.кв",
+        "logoSrc": "/images/producers/dongbu_steel.jpg"
+      },
+      {
+        "producer": "Юж. Корея Dongbu Steel",
+        "steel_sickness": "0,52мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Кварцмат",
+        "price": "от 155грн/м.кв",
+        "logoSrc": "/images/producers/dongbu_steel.jpg"
+      },
+      {
+        "producer": "Бельгия Arcelor Mittal",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Глянцевый полиэстер (PE)",
+        "price": "от 127грн/м.кв",
+        "logoSrc": "/images/producers/arcelor_mittal_belgium.jpg"
+      },
+      {
+        "producer": "Бельгия Arcelor Mittal",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE)",
+        "price": "от 131грн/м.кв",
+        "logoSrc": "/images/producers/arcelor_mittal_belgium.jpg"
+      },
+      {
+        "producer": "Бельгия Arcelor Mittal",
+        "steel_sickness": "0,5мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Глянцевый полиэстер (PE)",
+        "price": "от 150грн/м.кв",
+        "logoSrc": "/images/producers/arcelor_mittal_belgium.jpg"
+      },
+      {
+        "producer": "Бельгия Arcelor Mittal",
+        "steel_sickness": "0,5мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE)",
+        "price": "от 153грн/м.кв",
+        "logoSrc": "/images/producers/arcelor_mittal_belgium.jpg"
+      },
+      {
+        "producer": "Германия Arcelor Mittal",
+        "steel_sickness": "0,5мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Глянцевый полиэстер (PE)",
+        "price": "от 155грн/м.кв",
+        "logoSrc": "/images/producers/arcelor_mittal_germany.jpg"
+      },
+      {
+        "producer": "Германия Arcelor Mittal",
+        "steel_sickness": "0,5мм",
+        "anticorrosion_coating": "ZN 225гр/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE)",
+        "price": "от 158грн/м.кв",
+        "logoSrc": "/images/producers/arcelor_mittal_germany.jpg"
+      },
+      {
+        "producer": "Турция TATA Steel",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 100гр/м.кв",
+        "polymer_coating": "Глянцевый полиэстер (PE)",
+        "price": "от 117грн/м.кв",
+        "logoSrc": "/images/producers/tata_steel.jpg"
+      },
+      {
+        "producer": "Турция TATA Steel",
+        "steel_sickness": "0,45мм",
+        "anticorrosion_coating": "ZN 100гр/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE)",
+        "price": "от 120грн/м.кв",
+        "logoSrc": "/images/producers/tata_steel.jpg"
+      }
+    ],
+    "description": "Полиэстер – полиэфирная краска, обладающая хорошей стойкостью цвета, поверхность гладкая, блестящая",
+    "images": [
+      {
+        "src": "images/catalog/green.jpg",
+        "full_src": "images/catalog/green-full.jpg",
+        "text": "Зеленая тема"
+      }, {
+        "src": "images/catalog/blue.jpg",
+        "full_src": "images/catalog/blue-full.jpg",
+        "text": "Синяя тема"
+      }, {
+        "src": "images/catalog/red.jpg",
+        "full_src": "images/catalog/red-full.jpg",
+        "text": "Красная тема"
+      }, {
+        "src": "images/catalog/yellow.jpg",
+        "full_src": "images/catalog/yellow-full.jpg",
+        "text": "Желтая тема"
+      }, {
+        "src": "images/catalog/gray.jpg",
+        "full_src": "images/catalog/gray-full.jpg",
+        "text": "Серая тема"
+      }, {
+        "src": "images/catalog/brown.jpg",
+        "full_src": "images/catalog/brown-full.jpg",
+        "text": "Коричневая тема"
+      }
+    ],
+    "photos": [
+      {
+        "src": "images/photo/Krovlya-doma-iz-metallocherepitsyi.jpg",
+        "name": "Кровля выполнена из металлочерепицы"
+      }, {
+        "src": "images/photo/Metal_tile-Nikolaev-164.jpg",
+        "name": "Фото реального объекта в Николаеве"
+      }
+    ]
+}

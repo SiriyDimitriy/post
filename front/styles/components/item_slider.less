@@ -1,0 +1,71 @@
+@import "../__colors";
+
+.slider--container {
+
+    width: 21rem;
+
+    .fullImage {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: all linear 0.5s;  // consolidated with timeout in js
+            opacity: 1;
+            position: relative;
+            left: 0;
+        }
+
+        .move {
+            left: -100%;
+        }
+
+        .fade {
+            opacity: 0;
+        }
+    }
+
+    .smallImages {
+        display: flex;
+        justify-content: stretch;
+        flex-wrap: wrap;
+
+        img {
+            width: 4rem;
+            height: 100%;
+            object-fit: contain;
+            object-position: top;
+            cursor: pointer;
+
+            @media only screen and (max-width: 600px) {
+                width: 2rem;
+            }
+        }
+    }
+
+    .modal {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: @overlay;
+
+        .zoomed--image {
+
+            width: 70%;
+
+            @media only screen and (max-width: 600px) {
+                width: 80%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+
+}

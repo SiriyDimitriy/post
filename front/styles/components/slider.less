@@ -1,0 +1,131 @@
+@import "../__colors";
+
+.super_super {
+  position: relative;
+  height: 400px;
+}
+
+.super_wrapper {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    .all_mixin();
+}
+
+.all_mixin {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.slider_wrapper {
+  width: 400px;
+  height: 250px;
+  border: 1px solid #333;
+  overflow: hidden;
+  border-radius: 4px !important;
+  .all_mixin();
+}
+
+.slider {
+  width: 2000px;
+  .all_mixin();
+}
+
+.slider-item {
+  float: left;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 250px;
+  font-size: 20px;
+  background: #383838;
+  text-align: center;
+  border-radius: 4px !important;
+  transition: all .2s linear;
+  .all_mixin();
+}
+
+.hide {
+  .slider-item();
+}
+
+.buttons_wrapper {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  .all_mixin();
+}
+
+.button_mx {
+  background-size: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s linear;
+  .all_mixin();
+}
+
+.buttons_wrapper .prev_button {
+  .button_mx();
+  background-image: url(http://static.birgun.net/static/images/slider-arrow-left.svg);
+}
+
+.buttons_wrapper .next_button {
+  .button_mx();
+  background-image: url(http://static.birgun.net/static/images/slider-arrow-right.svg);
+}
+
+.buttons_wrapper button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  .all_mixin();
+}
+
+.indicators {
+  width: 400px;
+  position: absolute;
+  bottom: -4px;
+  z-index: 2 !important;
+  text-align: center;
+  .all_mixin();
+}
+
+.indicators li {
+  display: inline-block;
+  margin-right: 5px;
+  width: 12px;
+  height: 12px;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  text-indent: -9999px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  .all_mixin();
+}
+
+.indicators li:last-child {
+  margin-right: 0;
+  .all_mixin();
+}
+
+.active_indicator {
+  background: rgba(0, 0, 0, 0.3) !important;
+  color: #fff !important;
+  .all_mixin();
+}

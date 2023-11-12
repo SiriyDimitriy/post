@@ -1,0 +1,263 @@
+@import "./newDesignStyles.less";
+
+.Production {
+
+    .ProductionInner {
+        .ContentHorizontalPlacement();
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .Decking {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+        .List {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+
+            .Item {
+                margin: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .Characteristics {
+            position: relative;
+            .Table();
+
+            .ArrowTriangle {
+                .Triangle();
+
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: -1rem;
+            }
+        }
+    }
+
+    .MetalTails {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+
+        @media(max-width: 650px) {
+            flex-direction: column;
+        }
+
+        .MetalTail {
+            width: 49%;
+            margin-top: 2rem;
+
+            @media(max-width: 650px) {
+                width: 100%;
+            }
+
+            .LabelBlock {
+                position: relative;
+
+
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                margin-bottom: 2rem;
+
+                .Image {
+                    position: absolute;
+                    width: 70%;
+                    display: block;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    bottom: 2rem;
+                    z-index: 1;
+
+                    @media(max-width: 800px) {
+                        bottom: 1rem;
+                    }
+                }
+
+                .Label {
+                    position: absolute;
+                    top:0;
+                    z-index: 2;
+                    background: transparent;
+
+                    font-size: @subFontSize;
+                    color: @headerColor;
+                    border-left: 2px solid @dash;
+
+                    white-space: pre-wrap;
+                    padding-left: 0.5rem;
+                }
+
+                .Polygon {
+
+                    fill: @blockBg;
+
+                    line {
+                        stroke: #E1E1E1;
+                    }
+                }
+
+            }
+
+            .Characteristics {
+                position: relative;
+                .Table();
+
+                .ArrowTriangle {
+                    .Triangle();
+
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    top: -1rem;
+                }
+            }
+        }
+    }
+
+    .Prices {
+        margin-bottom: 3rem;
+
+        .Table();
+
+        .Product {
+            flex: 2;
+        }
+
+        .Price {
+            flex: 1;
+            text-align: center;
+        }
+
+    }
+
+    .Colors {
+
+        padding-top: 3rem;
+
+        .ColorsHeader {
+            font-size: 2rem;
+            color: @headerColor;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .ColorList {
+            background-color: @blockBg;
+            border-radius: 5px;
+            padding: 2rem 1rem;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+            justify-items: stretch;
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+
+            .Color {
+                background-color: @iconBg;
+                border-radius: 3px;
+
+                padding: 0.5rem;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .Hex {
+                    border-radius: 3px;
+                    height: 5rem;
+                    width: 100%;
+                }
+
+                .Ral {
+                    font-size: @descriptionFontSize;
+                    color: @headerColor;
+                    padding: 0.5rem 0;
+                }
+
+                .ColorName {
+                    border-bottom: 1px dashed #EEEEEE;
+                    color: @subBlockHeaderColor;
+                    font-size: @subDescriptionFontSize;
+                    padding-bottom: 0.5rem;
+                }
+
+                .Cover {
+                    color: @subBlockHeaderColor;
+                    font-size: @subDescriptionFontSize;
+                    padding: 0.5rem 0;
+                }
+            }
+        }
+    }
+}
+
+
+.Triangle {
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid @blockBg;
+    border-radius: 1px;
+}
+
+
+.Table {
+    display: flex;
+    flex-direction: column;
+
+    background-color: @blockBg;
+    box-shadow: 0px 15px 40px rgba(199, 199, 199, 0.25);
+    border-radius: 5px;
+
+    font-size: @descriptionFontSize;
+
+    @media(max-width: 650px) {
+        font-size: @descriptionFontSizeMob;
+    }
+
+    color: @descriptionColor;
+
+    .TableHeader {
+        background-color: @contrastColor;
+        color: @blockBg;
+        font-size: @subBlockHeaderFontSize;
+
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .Row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        &:nth-child(even) {
+            background-color: @stripedBg;
+        }
+
+        .AllAvailablePlace {
+            flex: 1;
+        }
+
+        .MarginLeft {
+            margin-left: 0.5rem;
+        }
+    }
+}

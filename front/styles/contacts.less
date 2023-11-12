@@ -1,0 +1,75 @@
+@import "mixins";
+
+.container {
+    display: flex;
+
+    @media only screen and (max-width: 700px) { // in order map will be on the bottom of page on small screens (correlates with map.less)
+        display: block;
+    }
+
+    .contacts {
+        background-color: var(--block-bg-color);
+        padding: 1rem;
+        position: relative;
+
+        .block--container {
+            display: flex;
+            font-size: 1rem;
+            flex-wrap: wrap;
+            padding: 0 1rem 0 2rem;
+
+            @media only screen and (max-width: 700px) {
+                padding: 0;
+            }
+
+            .block {
+
+                width: 33%; // in order don't show more 2 items per row
+
+                @media only screen and (max-width: 1300px) {
+                    width: 50%;
+                }
+                @media only screen and (max-width: 500px) {
+                    width: 100%;
+                }
+
+                box-sizing: border-box;
+
+                margin-bottom: 1rem;
+                padding: 0 0.5rem;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .label {
+                    font-size: 0.6rem;
+                    text-transform: uppercase;
+                    padding-bottom: 0.5rem;
+                    color: var(--text-color-secondary);
+                }
+
+                .value {
+                    font-size: 1rem;
+
+                    img {
+                        width: 1rem;
+                        height: 1rem;
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .header {
+            .page--caption();
+        }
+
+        .map {
+            position: absolute;
+        }
+
+    }
+}
+
+

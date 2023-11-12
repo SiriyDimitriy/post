@@ -1,0 +1,35 @@
+@import "../__colors";
+
+.MagnifyingPopup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    width: 100%;
+    height: 100vh;
+    background-color: @overlay;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .RelativeContainer {
+        position: relative;
+        max-width: 100%;
+
+        .CrossIcon {
+            position: absolute;
+            right: 0.5rem;
+            top: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+        }
+
+        .Image {
+            max-width: 100%;
+        }
+    }
+
+}

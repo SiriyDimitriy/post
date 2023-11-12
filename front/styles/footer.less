@@ -1,0 +1,64 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  bottom: 0;
+  background-color: var(--body-color);
+
+  &_main {
+    font-size: 1rem;
+    border-top: 1px solid var(--text-color);
+    box-shadow: 0 -5px 5px -5px var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    &_links {
+
+      &_content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &_item {
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    &_phones, &_schedule, &_address, &_links {
+      &_header {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      &_content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+
+      &_phones, &_schedule, &_address {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  &_rights {
+    font-size: 0.75rem;
+  }
+}

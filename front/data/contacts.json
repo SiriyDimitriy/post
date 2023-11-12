@@ -1,0 +1,18 @@
+{
+  "phones": ["+38954736363828", "+38954736363826"],
+  "email": "bla@bla.com",
+  "address": "улица Маякоского, д.3",
+  "howToGet": "На машине или пешком свернуть за третьим поворотом направо от БЦ \"Аааа\"",
+  "social": {
+    "facebook": "link_to_our_facebook",
+    "instagram": "link_to_our_instagram"
+  },
+  "map": {
+    "title": "KROF office",
+    "geo": {
+      "lat": 40.854885,
+      "lng": -88.081807
+    }
+
+  }
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Металлочерепица Монтеррей",
+    "image": "/images/landing/monterrey.jpg",
+    "description_items": {
+      "common_width": "1195мм",
+      "effective_width": "1100мм",
+      "wave_step": "350мм",
+      "cross_stamp_height": "23мм",
+      "wave_height": "25мм",
+      "steel_sickness": "0,4мм/ 0,45мм/ 0,5мм/ 0,52мм",
+      "min_length": "450мм",
+      "max_length": "12000мм",
+      "min_angle": "14 градусів"
+    },
+    "prices": [
+      {
+        "producer": "Китай SUTOR",
+        "price": "от 91грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      },
+      {
+        "producer": "Украина Металлы и Полимеры",
+        "price": "от 119грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      },
+      {
+        "producer": "Юж. Корея Dongbu Steel",
+        "price": "от 129грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      },
+      {
+        "producer": "Бельгия Arcelor Mittal",
+        "price": "от 129грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      },
+      {
+        "producer": "Германия Arcelor Mittal",
+        "price": "от 157грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      },
+      {
+        "producer": "Турция TATA Steel",
+        "price": "от 119грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      }
+    ]
+  },
+  {
+    "name": "Металлочерепица Дюна",
+    "image": "/images/landing/duna.jpg",
+    "description_items": {
+      "common_width": "1200мм",
+      "effective_width": "1120мм",
+      "wave_step": "350мм",
+      "cross_stamp_height": "20мм",
+      "wave_height": "25мм",
+      "steel_sickness": "0,4мм/ 0,45мм/ 0,5мм/ 0,52мм",
+      "min_length": "450мм",
+      "max_length": "12000мм",
+      "min_angle": "14 градусів"
+    },
+    "prices": [
+      {
+        "producer": "Китай SUTOR",
+        "price": "от 91грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      },
+      {
+        "producer": "Украина Металлы и Полимеры",
+        "price": "от 119грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      },
+      {
+        "producer": "Юж. Корея Dongbu Steel",
+        "price": "от 129грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      },
+      {
+        "producer": "Бельгия Arcelor Mittal",
+        "price": "от 129грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      },
+      {
+        "producer": "Германия Arcelor Mittal",
+        "price": "от 157грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      },
+      {
+        "producer": "Турция TATA Steel",
+        "price": "от 119грн/м.кв",
+        "polymer_coating": "Матовий полиэстер (MPE), Глянцевый полиэстер (PE)"
+      }
+    ]
+  }
+]

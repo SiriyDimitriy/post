@@ -1,0 +1,21 @@
+[
+  {"hexColor": "#f9a800", "coating": "PE", "ral": "1003", "humanReadableColor":  "Жовтий"},
+  {"hexColor": "#e6d2b5", "coating": "PE", "ral": "1015", "humanReadableColor":  "Бежевий"},
+  {"hexColor": "#59191f", "coating": "PE / Матовий / Кварцматовий", "ral": "3005", "humanReadableColor":  "Гнила вишня"},
+  {"hexColor": "#6d342d", "coating": "Матовий", "ral": "3009", "humanReadableColor":  "Оксид червоний"},
+  {"hexColor": "#792423", "coating": "PE", "ral": "3011", "humanReadableColor":  "Коричнево-червоний"},
+  {"hexColor": "#005387", "coating": "PE / Клаудматовий", "ral": "5005", "humanReadableColor":  "Сигнально синій"},
+  {"hexColor": "#004f7c", "coating": "PE", "ral": "5010", "humanReadableColor":  "Горечавково синій"},
+  {"hexColor": "#114232", "coating": "PE / Матовий / Кварцматовий", "ral": "6005", "humanReadableColor":  "Зелений"},
+  {"hexColor": "#37422f", "coating": "Матовий / Клаудматовий", "ral": "6020", "humanReadableColor":  "Хромово-зелений"},
+  {"hexColor": "#383e42", "coating": "Матовий", "ral": "7016", "humanReadableColor":  "Антрацитово-сірий"},
+  {"hexColor": "#45494e", "coating": "Матовий / Кварцматовий", "ral": "7024", "humanReadableColor":  "Графітовий-сірий"},
+  {"hexColor": "#8d4931", "coating": "Матовий / Кварцматовий / Клаудматовий", "ral": "8004", "humanReadableColor":  "Теракотовий"},
+  {"hexColor": "#5e2f26", "coating": "Кварцматовий", "ral": "8015", "humanReadableColor":  "Каштаново-коричневий"},
+  {"hexColor": "#442f29", "coating": "РЕ / Матовий / Кварцматовий / Клаудматовий", "ral": "8017", "humanReadableColor":  "Шоколадно-коричневий"},
+  {"hexColor": "#3d3635", "coating": "Матовий / Кварцматовий", "ral": "8019", "humanReadableColor":  "Темно-коричневий"},
+  {"hexColor": "#ecece7", "coating": "РЕ", "ral": "9003", "humanReadableColor":  "Сигнальний білий"},
+  {"hexColor": "#0e0e10", "coating": "Матовий / Кварцматовий / Клаудматовий", "ral": "9005", "humanReadableColor":  "Чорний янтар"},
+  {"hexColor": "#a1a1a0", "coating": "РЕ", "ral": "9006", "humanReadableColor":  "Срібло"},
+  {"hexColor": "#f1ece1", "coating": "РЕ", "ral": "9010", "humanReadableColor":  "Білий"}
+]

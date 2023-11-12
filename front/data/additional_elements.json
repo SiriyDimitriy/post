@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Коньковая планка плоская 1",
+    "steel_sickness": "0,4мм",
+    "length": "2м",
+    "anticorrosion_coating": "ZN 100гр/м.кв",
+    "polymer_coating": "Глянцевый полиэстер (PE)",
+    "price": "Цену уточнейте",
+    "src": "/images/additional_elements/additional_element.jpg"
+  },
+  {
+    "name": "Коньковая планка плоская 2",
+    "steel_sickness": "0,4мм",
+    "length": "3м",
+    "anticorrosion_coating": "ZN 100гр/м.кв",
+    "polymer_coating": "Глянцевый полиэстер (PE)",
+    "price": "Цену уточнейте",
+    "src": "/images/additional_elements/additional_element.jpg"
+  }
+]

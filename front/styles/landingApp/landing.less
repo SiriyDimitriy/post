@@ -1,0 +1,66 @@
+.landing {
+    padding: 3rem 0;
+
+    @media only screen and (max-width: 600px) {
+        padding: 1rem 5%;
+    }
+
+    .landing--img1 {
+        width: 100%;
+    }
+
+    &_services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+
+        &_header {
+            text-shadow: 1px 1px 2px var(--text-color);
+            text-transform: uppercase;
+            color: var(--text-color-secondary);
+        }
+
+        &_list {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 1rem;
+            justify-content: space-between;
+
+            &_item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 27%;
+                padding: 1%;
+
+                @media only screen and (max-width: 900px) {
+                    width: 46%;
+                    padding: 1%;
+                }
+
+                @media only screen and (max-width: 500px) {
+                    width: 96%;
+                    padding: 3%;
+                }
+
+                &_icon {
+                    width: 3rem;
+                    height: 3rem;
+                }
+
+                &_header {
+                    font-size: 1.5rem;
+                    padding: 1rem;
+                    text-align: center;
+                }
+
+                &_description {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}

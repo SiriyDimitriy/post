@@ -1,0 +1,96 @@
+@import '../../styles/components/constants';
+
+.button {
+  color: @button_text_color;
+  //font-size: @button_font_size;
+  padding: @s_gap;
+  margin: 0 @s_gap;
+  min-width: 5rem;
+  max-width: 15rem;
+  height: 45px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s;
+  border-radius: @xss_border_radius;
+
+  &:hover {
+    color: @button_text_color_hovered;
+  }
+
+  &_primary {
+    background-color: @default_button_bg_color;
+
+    &:hover {
+      box-shadow: inset 0 0 @xss_gap @xss_gap darken(@default_button_bg_color, 5%);
+    }
+  }
+
+  &_reject {
+    background-color: @reject_action_color;
+
+    &:hover {
+      box-shadow: inset 0 0 @xss_gap @xss_gap darken(@reject_action_color, 5%);
+    }
+  }
+
+  &_success {
+    background-color: @success_action_color;
+
+    &:hover {
+      box-shadow: inset 0 0 @xss_gap @xss_gap darken(@success_action_color, 5%);
+    }
+  }
+
+  &_disabled {
+    cursor: not-allowed;
+    background-color: @button_disabled_color;
+
+    &:hover {
+      box-shadow: none;
+      color: @button_text_color;
+    }
+  }
+
+  &_clear {
+    cursor: pointer;
+    background-color: @button_clear_color;
+
+    &:hover {
+      box-shadow: inset 0 d0 @xss_gap @xss_gap darken(@button_clear_color, 10%);
+    }
+  }
+
+  &_icon {
+    margin: 0;
+    padding: 0;
+    min-width: auto;
+    background-color: transparent;
+  }
+
+  &_default {
+    margin-right: 0;
+    box-sizing: content-box;
+    cursor: pointer;
+    background-color: transparent;
+    color: @main_font_color;
+    height: 17px;
+    min-width: auto;
+    border: @xxxxs_gap solid @main_border_color;
+    padding: @xsss_gap @xm_gap;
+    font-size: 14px;
+
+    &:hover {
+      color: @main_font_color;
+    }
+  }
+}
+
+.icon {
+  width: 14px;
+}

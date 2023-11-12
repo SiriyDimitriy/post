@@ -1,0 +1,63 @@
+@import "mixins";
+
+.priceContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    //flex: 1 0 21%;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+
+    .prices {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        width: 400px;
+        border: 1px solid var(--text-color);
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        border-radius: 3px;
+        background-color: var(--body-color);
+
+        .logo {
+            object-fit: contain;
+            align-self: center;
+            height: 30px;
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    .commonProps {
+        margin: 0.5rem 1rem;
+        color: var(--text-color-secondary);
+        text-shadow: 1px 1px 2px var(--text-color);
+    }
+
+    .price_section {
+        .field_value {
+            font-weight: bold;
+            font-size: 1rem;
+            color: var(--promo-color);
+            text-shadow: 1px 1px 2px var(--text-color);
+        }
+    }
+
+    .options {
+
+        .option {
+            box-shadow: 1px 4px 4px -2px var(--text-color);
+            padding: 0.5rem;
+            margin: 0.5rem;
+            background-color: var(--block-bg-color);
+
+            &.checked {
+                background-color: var(--active-link-color);
+
+                .price_section .field_value {
+                    color: var(--text-color);
+                }
+            }
+        }
+    }
+}

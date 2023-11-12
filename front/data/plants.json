@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Китай SUTOR",
+    "logo": "/images/producers/sutor.jpg"
+  },
+  {
+    "name": "Украина Металлы и Полимеры",
+    "logo": "/images/producers/metipol.jpg"
+  },
+  {
+    "name": "Юж. Корея Dongbu Steel",
+    "logo": "/images/producers/dongbu_steel.jpg"
+  },
+  {
+    "name": "Бельгия Arcelor Mittal",
+    "logo": "/images/producers/arcelor_mittal_belgium.jpg"
+  },
+  {
+    "name": "Германия Arcelor Mittal",
+    "logo": "/images/producers/arcelor_mittal_germany.jpg"
+  },
+  {
+    "name": "Турция TATA Steel",
+    "logo": "/images/producers/tata_steel.jpg"
+  },
+  {
+    "name": "BRYZA",
+    "logo": "/images/producers/bryza.jpg"
+  }
+]

@@ -1,0 +1,31 @@
+@import "../newDesignStyles.less";
+
+.Header {
+    font-size: @headerFontSize;
+    text-transform: uppercase;
+    color: @headerColor;
+    white-space: pre-wrap;
+    @media (max-width: 800px) {
+        font-size: @headerFontSizeMob;
+    }
+
+    position: relative;
+
+    .Delimiter {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        left: -3rem;
+
+        @media (max-width: 800px) {
+            top: -1rem;
+            margin: 0;
+            left: 0;
+        }
+
+        width: 1.5rem;
+        height: 0;
+        border-top: 2px solid @dash;
+    }
+}

@@ -1,0 +1,4 @@
+front/node_modules/
+front/bin/
+front/package-lock.js
+**/__snapshots__/

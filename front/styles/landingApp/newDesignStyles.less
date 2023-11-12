@@ -1,0 +1,61 @@
+@headerColor: #000230;
+@blockBg: #FFFFFF;
+@subBlockHeaderColor: #3F3F3F;
+@stripedBg: #F9F9F9;
+@descriptionColor: #575757;
+@dash: #27AE61;
+@iconBg: #F7F7F7;
+
+@headerFontSize: 3rem;
+@headerFontSizeMob: 2.3rem;
+@smallHeaderFontSize: 1.7rem;
+@subFontSize: 1.4rem;
+@descriptionFontSize: 0.8rem;
+@subDescriptionFontSize: 0.6rem;
+@descriptionFontSizeMob: 1rem;
+
+@subBlockHeaderFontSize: 1.3rem;
+@subBlockTextFontSize: 0.7rem;
+
+@bodyBg: #FBF9F7;
+@contrastColor: #3F5B89;
+
+html {
+    font-size: 20px;
+
+    @media (max-width: 850px) {
+        font-size: 18px;
+    }
+    @media (max-width: 550px) {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: Futura New;
+    background: @bodyBg;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.ContentHorizontalPlacement {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    @media (max-width: 800px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@font-face {
+    font-family: "Futura New";
+    src: url("/bin/fonts/FuturaNewBook-Reg.ttf");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

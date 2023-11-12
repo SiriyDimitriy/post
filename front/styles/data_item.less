@@ -1,0 +1,54 @@
+@import "mixins";
+
+.data--item {
+  padding: 1rem;
+  background-color: var(--block-bg-color);
+
+  .container {
+    display: flex;
+    justify-content: stretch;
+
+    .description {
+      margin-left: 1rem;
+      font-size: 0.8rem;
+
+      //.promo {
+      //  color: var(--promo-color);
+      //}
+
+
+      //.call {
+      //    margin-left: 1rem;
+      //    background-color: @bg-color;
+      //    color: @body-color;
+      //    padding: 0.5rem;
+      //}
+
+      .description--caption {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .description--block {
+        margin: 0.5rem 0;
+      }
+
+      .description_price {
+        .price_section {
+          font-size: 1rem;
+
+          .field_name {
+
+          }
+
+          .field_value {
+            font-weight: bold;
+            color: var(--promo-color);
+            text-shadow: 1px 1px 2px var(--text-color);
+          }
+        }
+      }
+    }
+  }
+
+}
