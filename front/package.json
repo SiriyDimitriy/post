@@ -15,7 +15,7 @@
     "test:watch": "jest --watch --config ./test/jest.config.js",
     "test:coverage": "jest --coverage --config ./test/jest.config.js",
     "build-watch": "cross-env ./node_modules/.bin/webpack --watch",
-    "build": "./node_modules/.bin/webpack",
+    "build": "webpack",
     "dev-server": "cross-env NODE_ENV=development webpack-dev-server --mode production --hot --config webpack.config.js --reset-cache",
     "node-server": "cross-env NODE_PORT=4004 npx nodemon --max-old-space-size=4192 dev-server.js",
     "dev": "./node_modules/.bin/webpack-dev-server --hot --history-api-fallback --inline --open",
