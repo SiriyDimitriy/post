@@ -90,7 +90,7 @@ const NewHeader = React.memo(({ config }) => {
     </div>;
 
     return <div className={style.Header}>
-        <img className={style.MainImage} src={config.mainImg}/>
+        <img className={style.MainImage} src={'/images/post-logo.png'}/>
         <svg viewBox="0 0 100 150" preserveAspectRatio="none" className={style.MobileBackground}>
             <polygon points="0,0 0,145 100,50 100,0"/>
             <polygon points="0,145 0,150 100,50 100,45" fill={'#F3EFEB'}/>
@@ -100,41 +100,33 @@ const NewHeader = React.memo(({ config }) => {
             <div className={style.Contacts}>
                 <div className={style.ContactName}>
                     <a href="/metalTail.html">
-                        <img className={style.LogoImage} src={config.logoImg}/>
+                        <img className={style.LogoImage} src={'/images/post-logo.png'}/>
                     </a>
+                </div>
+                <div className={style.ContactName}>
+                    Плечі Атласа
                 </div>
                 <div className={style.ContactPhones}>
-                    <a href="tel:+380632938167">
-                        <div className={style.ContactPhone}>
-                            <img src={'/svg/services/phone.svg'} className={style.PhoneIcon}/>
-                            +380963095377
-                        </div>
+                    <a href="https://api.whatsapp.com/send?phone=+380955291236">
+                        <img src={'/svg/services/whatsapp.svg'} className={style.PhoneIcon}/>
                     </a>
-                    <a href="tel:+380996163334">
-                        <div className={style.ContactPhone}>
-                            <img src={'/svg/services/phone.svg'} className={style.PhoneIcon}/>
-                            +380936471572
-                        </div>
-                    </a>
-                    <a href="tel:+380979066763">
-                        <div className={style.ContactPhone}>
-                            <img src={'/svg/services/phone.svg'} className={style.PhoneIcon}/>
-                            +380668423770
-                        </div>
+
+                    <a href="https://signal.me/#p/+380955291236">
+                        <img src={'/svg/services/signal.svg'} className={style.PhoneIcon}/>
                     </a>
                 </div>
-                <Button className={style.BackCall} onClickHandler={openModal}>Зворотній дзвінок</Button>
+                {/*<Button className={style.BackCall} onClickHandler={openModal}>Зворотній дзвінок</Button>*/}
             </div>
 
             <div className={style.SaleDepartment}>
                 <img src={'/svg/services/megaphone.svg'} className={style.MegaphoneIcon}/>
-                <div>Відділ продажу від завода</div>
+                <div>Безпосередньо розробник та виробник щогл</div>
                 <div className={style.Delimiter}/>
             </div>
 
-            <Title text={config.header} delimiter={false}/>
+            <Title text={'Телескопічні щогли "Плечі Атласа"'} delimiter={false}/>
 
-            <div className={style.Retail}>{config.subHeader}</div>
+            <div className={style.Retail}>{'Виготовлення телескопічних щогл різної довжини та конфігурації'}</div>
 
             <div className={style.PromoCards}>
                 {promoCards.map(({ label, image }) => <div key={label} className={style.PromoCard}>
@@ -144,7 +136,7 @@ const NewHeader = React.memo(({ config }) => {
             </div>
 
             <div className={style.MakeOrder}>
-                <div className={style.AdvertiseText}>{config.motivationMessage}</div>
+                <div className={style.AdvertiseText}>{'Тримаємо небо.'}</div>
                 <Button onClickHandler={openModal}>Залишити заявку</Button>
             </div>
 

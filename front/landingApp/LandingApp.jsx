@@ -18,13 +18,13 @@ const LandingApp = React.memo(({ landingMode }) => {
     return <div>
         <NewHeader config={config}/>
 
-        <NewProduction config={config} landingMode={landingMode} priceConfig={priceConfig}/>
+        {/*<NewProduction config={config} landingMode={landingMode} priceConfig={priceConfig}/>*/}
 
         <NewServices/>
 
-        <AdditionalProduction landingMode={landingMode}/>
+        {/*<AdditionalProduction landingMode={landingMode}/>*/}
         <Plants/>
-        <Footer config={config}/>
+        {/*<Footer config={config}/>*/}
         <Alert stack={{ limit: 6 }}
                key='alert'
                effect='scale'

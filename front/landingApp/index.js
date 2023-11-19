@@ -5,11 +5,11 @@ import store from '../Store';
 import {Provider} from 'react-redux';
 import {getConfig} from './config';
 
-requirejs(["/landingMode.js"], function(landingMode) {
+// requirejs(["/landingMode.js"], function(landingMode) {
     ReactDOM.render(
         <Provider store={store}>
-            <LandingApp landingMode={landingMode.getMode()}/>
+            <LandingApp/>
         </Provider>,
         document.getElementById('mount')
     );
-});
+// });
