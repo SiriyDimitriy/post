@@ -8,14 +8,17 @@ import Alert from 'react-s-alert';
 const NewHeader = React.memo(({ config }) => {
 
     const promoCards = [{
-        label: 'Доставка по Києву та області',
-        image: '/svg/services/delivery.svg',
+        label: 'Зроблено з ненавистю до рашистів',
+        image: '/svg/services/explosion.svg',
+    },{
+        label: 'Розробка та постійне вдосконалення',
+        image: '/svg/services/arrow-up-graph.svg',
     }, {
-        label: 'Ціни нижче ринкових на 5-10%',
+        label: 'Ціни по собівартості матеріалів та робіт',
         image: '/svg/services/discount.svg',
     }, {
-        label: 'Монтаж будь-якого рівня складності',
-        image: '/svg/services/roof.svg',
+        label: 'Практична та легка в користуванні конструкція',
+        image: '/svg/services/fingers.svg',
     }];
 
     const [visibleModal, setModalVisibility] = useState(false);
