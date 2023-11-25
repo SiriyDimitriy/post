@@ -1,31 +1,31 @@
 import React from 'react';
 import style from '../styles/landingApp/footer.less';
 
-const Footer = React.memo(({config}) => {
+const Footer = React.memo(() => {
 
     return <div className={style.Footer}>
         <div className={style.FooterInner}>
             <div className={style.ContactName}>
-                <img className={style.LogoImage} src={config.logoImg}/>
+                <img className={style.LogoImage} src={'/images/post-logo.png'}/>
             </div>
+
+            <div className={style.Info}>
+                <img className={style.Icon} src={'/svg/services/location.svg'}/>
+                <span>м.Київ</span>
+            </div>
+
+            <div className={style.Info}>
+                <img className={style.Icon} src={'/svg/services/schedule.svg'}/>
+                <span>без вихідних, 24/7</span>
+            </div>
+
             <div className={style.ContactPhones}>
-                <a href="tel:+380632938167">
-                    <div className={style.ContactPhone}>
-                        <img src={'/svg/services/phone.svg'} className={style.PhoneIcon}/>
-                        +380963095377
-                    </div>
+                <a href="https://api.whatsapp.com/send?phone=+380955291236">
+                    <img src={'/svg/services/whatsapp.svg'} className={style.PhoneIcon}/>
                 </a>
-                <a href="tel:+380996163334">
-                    <div className={style.ContactPhone}>
-                        <img src={'/svg/services/phone.svg'} className={style.PhoneIcon}/>
-                        +380936471572
-                    </div>
-                </a>
-                <a href="tel:+380979066763">
-                    <div className={style.ContactPhone}>
-                        <img src={'/svg/services/phone.svg'} className={style.PhoneIcon}/>
-                        +380668423770
-                    </div>
+
+                <a href="https://signal.me/#p/+380955291236">
+                    <img src={'/svg/services/signal.svg'} className={style.PhoneIcon}/>
                 </a>
             </div>
         </div>

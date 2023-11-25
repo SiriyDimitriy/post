@@ -22,7 +22,7 @@ const NewProduction = React.memo(({ config, priceConfig }) => {
             <div className={style.ProductionInner}>
                 <div className={style.Prices}>
                     <div className={style.TableHeader}>
-                        <div className={style.Product}>Виробник</div>
+                        <div className={style.Product}>Модель</div>
                         <div className={style.Price}>Ціна</div>
                     </div>
                     {priceConfig && priceConfig.prices.map(price => <div key={price.product} className={style.Row}>
@@ -31,7 +31,7 @@ const NewProduction = React.memo(({ config, priceConfig }) => {
                     </div>)}
                 </div>
 
-                <Title text={'Наша продукция'}/>
+                <Title text={'Продукція'}/>
                 {siteName === 'Профнастила.НЕТ'
                     ? <div className={style.Decking}>
                         {slider && <AliceCarousel mouseTracking
@@ -73,6 +73,7 @@ const NewProduction = React.memo(({ config, priceConfig }) => {
                                                                                     className={style.MetalTail}>
                             <div className={style.LabelBlock}>
                                 <img src={image} className={style.Image}/>
+
                                 <span className={style.Label}>{label}</span>
                                 <svg viewBox="0 0 100 57" preserveAspectRatio="none" className={style.Polygon}>
                                     <polygon points="0,20 100,0 100,57 0,57"/>
@@ -107,20 +108,20 @@ const NewProduction = React.memo(({ config, priceConfig }) => {
                     </div>
                 }
 
-                <div className={style.Colors}>
-                    <div className={style.ColorsHeader}>
-                        Доступні кольори і типи захисних покриттів:
-                    </div>
-                    <div className={style.ColorList}>
-                        {colors.map(color => <div key={color.hex} className={style.Color}>
-                            {color.hex && <div className={style.Hex} style={{ backgroundColor: color.hex }}/>}
-                            {color.img && <img className={style.Hex} src={color.img}/>}
-                            <div className={style.Ral}>{color.ral}</div>
-                            <div className={style.ColorName}>({color.color})</div>
-                            <div className={style.Cover}>{color.cover}</div>
-                        </div>)}
-                    </div>
-                </div>
+                {/*<div className={style.Colors}>*/}
+                {/*    <div className={style.ColorsHeader}>*/}
+                {/*        Доступні кольори і типи захисних покриттів:*/}
+                {/*    </div>*/}
+                {/*    <div className={style.ColorList}>*/}
+                {/*        {colors.map(color => <div key={color.hex} className={style.Color}>*/}
+                {/*            {color.hex && <div className={style.Hex} style={{ backgroundColor: color.hex }}/>}*/}
+                {/*            {color.img && <img className={style.Hex} src={color.img}/>}*/}
+                {/*            <div className={style.Ral}>{color.ral}</div>*/}
+                {/*            <div className={style.ColorName}>({color.color})</div>*/}
+                {/*            <div className={style.Cover}>{color.cover}</div>*/}
+                {/*        </div>)}*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
         </div>);
 });

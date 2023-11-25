@@ -5,38 +5,30 @@ import Title from './components/Title';
 const NewServices = React.memo(({}) => {
 
     const services = [{
-        label: 'Зателефонуйте в офіс',
+        label: 'Зконтактуйте',
         image: '/svg/services/phone.svg',
-        description: 'Ми допоможемо зформувати завдання та намітимо кроки до його вирішення.'
+        description: 'Я допоможу зформувати завдання згідно Ваших вимог та вирішити його максимально швидко та гнучко.'
     }, {
-        label: 'Необхідні розміри',
-        image: '/svg/services/mail.svg',
-        description: 'Можна прислати на yaplakal@com.ua, продиктувати по телефону чи викликати замірника.'
-    }, {
-        label: 'Розрахунок та кошторис',
-        image: '/svg/services/calculator.svg',
-        description: 'Ми безкоштовно розрахуємо оптимальну кількість матеріалу та кошторис на монтаж.'
+        label: 'Перевірена та запатентована конструкція',
+        image: '/svg/services/guarantee.svg',
+        description: 'Адаптована до використання в складних умовах, перевірена багатьма користувачами та запатентована конструкція.'
+    },{
+        label: 'Гарантія. Сервіс. 24/7',
+        image: '/svg/services/24-hours.svg',
+        description: 'Гарантія, ремонт та безкоштовне обслуговування на період спєціальнай ваєннай апірациі.'
     }, {
         label: 'Оплата',
         image: '/svg/services/wallet.svg',
-        description: 'Ви оплачуєте матеріал зручним способом – в офісі, на сайті або безготівковим переказом.'
-    }, {
-        label: 'Гарантія',
-        image: '/svg/services/guarantee.svg',
-        description: 'Ми - офіційні представники виробника та надаємо гарантію на матеріал та монтаж.'
-    }, {
+        description: 'На рахунок ФОП. Безготівковий розрахунок.'
+    },{
         label: 'Доставка',
         image: '/svg/services/fast-delivery.svg',
-        description: 'Ми доставимо куплені будматеріали за мінімальною ціною швидко та дбайливо.'
-    }, {
-        label: 'Монтаж',
-        image: '/svg/services/roof.svg',
-        description: 'Ми робимо покрівельні роботи будь-якої складності. Починаючи з монтажу кроквяної конструкції і закінчуючи встановленням водостоків, коників та відливів.'
+        description: 'Новою поштою, безкоштовно, швидко та дбайливо.'
     }];
 
     return <div className={style.Services}>
         <div className={style.ServicesInner}>
-            <Title text={'Наші послуги'}/>
+            <Title text={'послуги'}/>
             <div className={style.ServiceList}>
                 {services.map(({label, description, image}, i) => <div key={label} className={style.Service}>
                     <div className={style.Text}>

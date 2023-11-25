@@ -11,9 +11,15 @@ const NewHeader = React.memo(({ config }) => {
         label: 'Зроблено з ненавистю до рашистів',
         image: '/svg/services/explosion.svg',
     },{
+        label: '50% від виробництва передається безкоштовно за запитом від ВЧ (фінансує той хто може)',
+        image: '/svg/services/tax.svg',
+    },{
         label: 'Розробка та постійне вдосконалення',
         image: '/svg/services/arrow-up-graph.svg',
     }, {
+        label: 'Повна комплектація, готова до застосування',
+        image: '/svg/services/complete.svg',
+    },{
         label: 'Ціни по собівартості матеріалів та робіт',
         image: '/svg/services/discount.svg',
     }, {
@@ -93,7 +99,7 @@ const NewHeader = React.memo(({ config }) => {
     </div>;
 
     return <div className={style.Header}>
-        <img className={style.MainImage} src={'/images/post-logo.png'}/>
+        <img className={style.MainImage} src={'/images/posts-main-image.jpg'}/>
         <svg viewBox="0 0 100 150" preserveAspectRatio="none" className={style.MobileBackground}>
             <polygon points="0,0 0,145 100,50 100,0"/>
             <polygon points="0,145 0,150 100,50 100,45" fill={'#F3EFEB'}/>
@@ -106,9 +112,9 @@ const NewHeader = React.memo(({ config }) => {
                         <img className={style.LogoImage} src={'/images/post-logo.png'}/>
                     </a>
                 </div>
-                <div className={style.ContactName}>
-                    Плечі Атласа
-                </div>
+                <h1 className={style.ContactName}>
+                    Телескопічні мачти "Плечі Атласа"
+                </h1>
                 <div className={style.ContactPhones}>
                     <a href="https://api.whatsapp.com/send?phone=+380955291236">
                         <img src={'/svg/services/whatsapp.svg'} className={style.PhoneIcon}/>
@@ -127,7 +133,7 @@ const NewHeader = React.memo(({ config }) => {
                 <div className={style.Delimiter}/>
             </div>
 
-            <Title text={'Телескопічні щогли "Плечі Атласа"'} delimiter={false}/>
+            <h2 className={style.Header}>Телескопічні щогли "Плечі Атласа"</h2>
 
             <div className={style.Retail}>{'Виготовлення телескопічних щогл різної довжини та конфігурації'}</div>
 
