@@ -3,7 +3,7 @@ import style from '../styles/landingApp/newHeader.less';
 import Title from './components/Title';
 import Button from './components/Button';
 import ModalWindow from '../components/ModalWindow/ModalWindow';
-import Alert from 'react-s-alert';
+// import Alert from 'react-s-alert';
 
 const NewHeader = React.memo(({ config }) => {
 
@@ -11,11 +11,14 @@ const NewHeader = React.memo(({ config }) => {
         label: 'Зроблено з ненавистю до рашистів',
         image: '/svg/services/explosion.svg',
     },{
-        label: '50% від виробництва передається безкоштовно за запитом від ВЧ (фінансує той хто може)',
+        label: '50% від виробництва передається безкоштовно за запитом від ВЧ (фінансує виробництво той, хто може)',
         image: '/svg/services/tax.svg',
     },{
         label: 'Розробка та постійне вдосконалення',
         image: '/svg/services/arrow-up-graph.svg',
+    },{
+        label: 'Легкість та міцність конструкції',
+        image: '/svg/services/feather.svg',
     }, {
         label: 'Повна комплектація, готова до застосування',
         image: '/svg/services/complete.svg',
@@ -43,10 +46,10 @@ const NewHeader = React.memo(({ config }) => {
             comment: comment
         };
 
-        if (!name || !phone || (!name && !phone)) {
-            Alert.error("Заповніть обов\'язкові поля (ім\'я та телефон)");
-            return;
-        }
+        // if (!name || !phone || (!name && !phone)) {
+        //     Alert.error("Заповніть обов\'язкові поля (ім\'я та телефон)");
+        //     return;
+        // }
 
         fetch('/api/feedback/',
             {
@@ -129,7 +132,13 @@ const NewHeader = React.memo(({ config }) => {
 
             <div className={style.SaleDepartment}>
                 <img src={'/svg/services/megaphone.svg'} className={style.MegaphoneIcon}/>
-                <div>Безпосередньо розробник та виробник щогл</div>
+                <div>Безпосередньо розробник та виробник телескопічних щогл</div>
+                <div className={style.Delimiter}/>
+            </div>
+
+            <div className={style.Warning}>
+                <img src={'/svg/services/megaphone.svg'} className={style.MegaphoneIcon}/>
+                <div>Креслення і опис конструкції  щогли є об'єктом авторського права, що зареєстроване в Україні за свідоцтвом № 120675 від 20.06.2023. Загальна конструкція щогли, її оригіналні деталі та взули є об'єктом інтелектуальної власності - корисною моделлю України, на який подана заявка № u 2023 04578 від 28.09.2023, що буде засвічдено свідоцтвом України на корисну модель "Розкладна мобільна телескопічна щогла". Будь-які факти неправомірного використання конструкції ціє щогли  переслідуватимуться відповідно до чинного законодавства України, в т.ч. за допомогою МВС, АМК та судових органів.</div>
                 <div className={style.Delimiter}/>
             </div>
 

@@ -143,6 +143,45 @@
             }
         }
 
+        .Warning {
+            align-self: flex-start;
+
+            display: flex;
+            align-items: center;
+            //background-color: @blockBg;
+            background-color: rgba(255, 211, 211, 0.8);
+            border-radius: 50px;
+            color: @subBlockHeaderColor;
+            font-size: 0.7rem;
+            padding: 0.7rem;
+            padding-right: 1.2rem;
+            margin-top: 20px;
+
+            position: relative;
+
+            .MegaphoneIcon {
+                background-color: #e14949;
+                padding: 0.5rem;
+                border-radius: 50%;
+                width: 1rem;
+                height: 1rem;
+                margin-right: 1rem;
+            }
+
+            .Delimiter {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                right: -1rem;
+                z-index: -1;
+
+                width: 1.5rem;
+                height: 0;
+                border-top: 2px solid #e14949;
+            }
+        }
+
         .Header {
             font-size: 2.3rem;
             text-transform: uppercase;
