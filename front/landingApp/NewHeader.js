@@ -155,7 +155,8 @@ const NewHeader = React.memo(({ config }) => {
 
             <div className={style.MakeOrder}>
                 <div className={style.AdvertiseText}>{'Тримаємо небо.'}</div>
-                <Button onClickHandler={openModal}>Залишити заявку</Button>
+                {/*<Button onClickHandler={openModal}>Залишити заявку</Button>*/}
+                <Button>Залишити заявку</Button>
             </div>
 
         </div>

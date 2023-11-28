@@ -7,13 +7,16 @@
     .ServicesInner {
         .ContentHorizontalPlacement();
         padding-top: 3rem;
+        padding-bottom: 2rem;
     }
 
 
     .ServiceList {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        //display: grid;
+        //grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 1rem;
+        flex-wrap: wrap;
+
         @media(max-width: 750px) {
             display: flex;
             flex-direction: column;

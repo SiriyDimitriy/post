@@ -8,6 +8,14 @@
   margin: 10px auto 30px auto;
   padding: 0 100px;
   position: relative;
+
+  @media(max-width: 600px) {
+    padding: 0 10px;
+
+    img {
+      width: 100px;
+    }
+  }
 }
 
 .btnPrev {
@@ -29,6 +37,12 @@
 }
 
 .ImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ImageContainerSmall {
   display: flex;
   justify-content: center;
   margin-top: 20px;

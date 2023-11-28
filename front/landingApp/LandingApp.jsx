@@ -1,7 +1,7 @@
 import React from 'react';
 import Plants from './Users';
 import NewProduction from './NewProduction';
-import AdditionalProduction from './AdditionalProduction';
+import style from '../styles/landingApp/landing.less';
 import NewServices from './NewServices';
 import NewHeader from './NewHeader';
 import Footer from './Footer';
@@ -28,6 +28,9 @@ const LandingApp = React.memo(({ landingMode }) => {
             product: "Телескопічна щогла 10500",
             price: "15000 грн"
         }, {
+            product: "Телескопічна щогла 9500",
+            price: "14000 грн"
+        },{
             product: "Телескопічна щогла 8500",
             price: "13000 грн"
         }, {
@@ -52,6 +55,7 @@ const LandingApp = React.memo(({ landingMode }) => {
             table: {
                 'Транспортні розміри': '1450х200х200мм',
                 'Максимальна робоча висота': '11.5м',
+                'Матеріали секцій': 'Алюміній АД31',
                 'Вага': '14кг',
             },
         }, {
@@ -60,7 +64,17 @@ const LandingApp = React.memo(({ landingMode }) => {
             table: {
                 'Транспортні розміри': '1450х200х200мм',
                 'Максимальна робоча висота': '10.5м',
+                'Матеріали секцій': 'Алюміній АД31',
                 'Вага': '12кг',
+            },
+        },  {
+            label: 'Телескопічна \nщогла 9500',
+            image: '/images/catalog/post-8500.jpg',
+            table: {
+                'Транспортні розміри': '1300х200х200мм',
+                'Максимальна робоча висота': '9.5м',
+                'Матеріали секцій': 'Алюміній АД31, Д16Т, АМг5',
+                'Вага': '10.5кг',
             },
         },  {
             label: 'Телескопічна \nщогла 8500',
@@ -68,6 +82,7 @@ const LandingApp = React.memo(({ landingMode }) => {
             table: {
                 'Транспортні розміри': '1300х200х200мм',
                 'Максимальна робоча висота': '8.5м',
+                'Матеріали секцій': 'Алюміній АД31, Д16Т, АМг5',
                 'Вага': '9.5кг',
             },
         },
@@ -77,12 +92,13 @@ const LandingApp = React.memo(({ landingMode }) => {
                 table: {
                     'Транспортні розміри': '1500х200х200мм',
                     'Максимальна робоча висота': '8.0м',
+                    'Матеріали секцій': 'Алюміній АД31, Д16Т, АМг5, карбон',
                     'Вага': '8.0кг',
                 },
             },
         ]};
 
-    return <div>
+    return <div className={style.wrapper}>
         <NewHeader config={config}/>
 
         <NewProduction config={config} landingMode={landingMode} priceConfig={priceConfig}/>
