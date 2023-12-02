@@ -95,7 +95,6 @@ const Construction = React.memo(() => {
             onSlideChange={syncMainBeforeChange}
             onSlideChanged={syncMainAfterChange}
             touchTracking={!thumbAnimation}
-            responsive={responsive}
         />,
         <div className={style.Thumbs}>
             <AliceCarousel

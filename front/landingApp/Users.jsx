@@ -6,6 +6,13 @@ import '../styles/__colors.less';
 import style from '../styles/users.less';
 import Title from './components/Title';
 
+const responsive = {
+    0: { items: 1 },
+    840: { items: 2 },
+    1024: { items: 3 },
+    1500: { items: 4 },
+};
+
 const Users = React.memo(() => {
 
     const items = [
@@ -108,6 +115,7 @@ const Users = React.memo(() => {
                 mouseTracking={false}
                 onSlideChanged={syncThumbs}
                 touchTracking={!mainAnimation}
+                responsive={responsive}
             />
             <div className={style.btnPrev} onClick={slidePrev}>&lang;</div>
             <div className={style.btnNext} onClick={slideNext}>&rang;</div>

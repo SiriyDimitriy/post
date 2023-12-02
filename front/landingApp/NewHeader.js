@@ -126,6 +126,10 @@ const NewHeader = React.memo(({ config }) => {
                     <a href="https://signal.me/#p/+380955291236">
                         <img src={'/svg/services/signal.svg'} className={style.PhoneIcon}/>
                     </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=100014047924814">
+                        <img src={'/svg/services/facebook.svg'} className={style.PhoneIcon}/>
+                    </a>
                 </div>
                 {/*<Button className={style.BackCall} onClickHandler={openModal}>Зворотній дзвінок</Button>*/}
             </div>
@@ -142,7 +146,7 @@ const NewHeader = React.memo(({ config }) => {
                 <div className={style.Delimiter}/>
             </div>
 
-            <h2 className={style.Header}>Телескопічні щогли "Плечі Атласа"</h2>
+            <h2 className={style.AppHeader}>Телескопічні щогли "Плечі Атласа"</h2>
 
             <div className={style.Retail}>{'Виготовлення телескопічних щогл різної довжини та конфігурації'}</div>
 

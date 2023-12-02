@@ -1,7 +1,8 @@
 @import "mixins";
-  .Image {
-    width: 90%;
-  }
+
+.Image {
+  width: 90%;
+}
 
 .Thumbs {
   max-width: 500px;
@@ -9,11 +10,20 @@
   padding: 0 100px;
   position: relative;
 
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     padding: 0 10px;
 
     img {
       width: 100px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 10px;
+    max-width: 150px;
+
+    img {
+      width: 150px;
     }
   }
 }
