@@ -1,10 +1,29 @@
 import React, {useState} from 'react';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
-import 'react-alice-carousel/lib/alice-carousel.css';
+// import AliceCarousel from 'react-alice-carousel';
+// import 'react-alice-carousel/lib/alice-carousel.css';
+// import 'react-alice-carousel/lib/alice-carousel.css';
 import '../styles/__colors.less';
 import style from '../styles/users.less';
 import Title from './components/Title';
+import Slider from "react-slick";
+
+// import "slick-carousel/slick/slick.less";
+// import "slick-carousel/slick/slick-theme.less";
+
+// const responsive = {
+//     0: { items: 1 },
+//     840: { items: 2 },
+//     1024: { items: 3 },
+//     1500: { items: 4 },
+// };
+
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+};
 
 const Usages = React.memo(() => {
 
@@ -74,36 +93,47 @@ const Usages = React.memo(() => {
         }
     };
 
-    return [
-        <Title text={'Використання'}/>,
-        <AliceCarousel
-            syncStateOnPropsUpdate={false}
-            activeIndex={mainIndex}
-            animationType="fadeout"
-            animationDuration={800}
-            disableDotsControls
-            disableButtonsControls
-            items={items}
-            mouseTracking={!thumbAnimation}
-            onSlideChange={syncMainBeforeChange}
-            onSlideChanged={syncMainAfterChange}
-            touchTracking={!thumbAnimation}
-        />,
-        <div className={style.Thumbs}>
-            <AliceCarousel
-                activeIndex={thumbIndex}
-                autoWidth
-                disableDotsControls
-                disableButtonsControls
-                items={thumbs}
-                mouseTracking={false}
-                onSlideChanged={syncThumbs}
-                touchTracking={!mainAnimation}
-            />
-            <div className={style.btnPrev} onClick={slidePrev}>&lang;</div>
-            <div className={style.btnNext} onClick={slideNext}>&rang;</div>
+    // return [
+    //     <Title text={'Використання'}/>,
+    //     <AliceCarousel
+    //         syncStateOnPropsUpdate={false}
+    //         activeIndex={mainIndex}
+    //         animationType="fadeout"
+    //         animationDuration={800}
+    //         disableDotsControls
+    //         disableButtonsControls
+    //         items={items}
+    //         mouseTracking={!thumbAnimation}
+    //         onSlideChange={syncMainBeforeChange}
+    //         onSlideChanged={syncMainAfterChange}
+    //         touchTracking={!thumbAnimation}
+    //     />,
+    //     <div className={style.Thumbs}>
+    //         <AliceCarousel
+    //             activeIndex={thumbIndex}
+    //             // autoWidth
+    //             disableDotsControls
+    //             disableButtonsControls
+    //             items={thumbs}
+    //             mouseTracking={false}
+    //             onSlideChanged={syncThumbs}
+    //             touchTracking={!mainAnimation}
+    //             responsive={responsive}
+    //         />
+    //         <div className={style.btnPrev} onClick={slidePrev}>&lang;</div>
+    //         <div className={style.btnNext} onClick={slideNext}>&rang;</div>
+    //     </div>
+    // ]
+
+    return (
+        <div className={style.Usages}>
+            <Title text={'Використання'}/>
+
+            <Slider {...settings}>
+                {items}
+            </Slider>
         </div>
-    ]
+    );
 });
 
 export default Usages;

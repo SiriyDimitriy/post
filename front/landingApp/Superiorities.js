@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import style from '../styles/landingApp/superiorities.less';
 import Title from './components/Title';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+// import AliceCarousel from 'react-alice-carousel';
+// import 'react-alice-carousel/lib/alice-carousel.css';
 
-const responsive = {
-    0: { items: 1 },
-    840: { items: 2 },
-    1024: { items: 3 },
-    1500: { items: 4 },
-};
+// const responsive = {
+//     0: { items: 1 },
+//     840: { items: 2 },
+//     1024: { items: 3 },
+//     1500: { items: 4 },
+// };
 
 const superiorities = [
     'Невеликі розміри (достатні для транспотування як в салоні так і багажнику пікапа)',
@@ -27,6 +27,7 @@ const superiorities = [
     'Кілочки для розтяжок з кутка стального (значно стійкіший в грунті в порівнянні з стальним кругом)',
     'Кілочки для розтяжок кріпляться до троса через ланцюг та карабін, що значно зпрощує коригування натягу троса, навідміну від талтрепа з різьбою, який потрібно крутити і при забрудненні різьби вона може підклинити',
     'Швидкозйомна конструкція для монтажу приладів на вершину щогли (сумісна з всіма щоглами)',
+    'Фіксація ніжок стяжкою з липучкою для зручності транспортування',
     'Конструкція щогли передбачає легку заміну будь-якого пошкодженого елемента на новий в польових умовах',
 ];
 

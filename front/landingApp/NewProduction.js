@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import style from '../styles/landingApp/newProduction.less';
 import Title from './components/Title';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
 
 const responsive = {
     0: { items: 1 },
@@ -34,22 +32,6 @@ const NewProduction = React.memo(({ config, priceConfig }) => {
                 <Title text={'Продукція'}/>
                 {siteName === 'Профнастила.НЕТ'
                     ? <div className={style.Decking}>
-                        {slider && <AliceCarousel mouseTracking
-                                                  autoPlayStrategy={"none"}
-                                                  items={slider}
-                                                  responsive={responsive}
-                                                  autoPlayInterval={1000}
-                                                  animationDuration={1000}
-                                                  animationType={"fadeout"}
-                                                  autoPlay
-                                                  autoPlayControls
-                                                  infinite
-                                                  touchTracking={false}
-                            // disableDotsControls
-                            // disableButtonsControls
-                            // paddingLeft={300}
-                            // paddingRight={300}
-                        />}
 
                         <section className={style.List}>
                             {Object.keys(products).map(key => <div className={style.Item}
@@ -88,23 +70,6 @@ const NewProduction = React.memo(({ config, priceConfig }) => {
                                 <div className={style.ArrowTriangle}/>
                             </div>
                         </div>)}
-
-                        {slider && <AliceCarousel mouseTracking
-                                                  autoPlayStrategy={"none"}
-                                                  items={slider}
-                                                  responsive={responsive}
-                                                  autoPlayInterval={1000}
-                                                  animationDuration={1000}
-                                                  animationType={"fadeout"}
-                                                  autoPlay
-                                                  autoPlayControls
-                                                  infinite
-                                                  touchTracking={false}
-                            // disableDotsControls
-                            // disableButtonsControls
-                            // paddingLeft={300}
-                            // paddingRight={300}
-                        />}
                     </div>
                 }
 

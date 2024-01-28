@@ -106,7 +106,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.png$/,
+                test: /\.(png|gif)$/,
                 exclude: [/node_modules/, /bin/],
                 use: [{
                     loader: 'url-loader',
@@ -135,6 +135,37 @@ module.exports = {
                 //         }
                 //     ]
             }, {
+                test: /\.(png|gif)$/,
+                include: [/node_modules/, /bin/],
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        'limit': 1000000,
+                        'mimetype': 'image/png'
+                    }
+                }]
+            },{
+                test: /\.(css|less)$/,
+                include: [/node_modules/],
+                use: [
+                    {
+                        loader: 'style-loader',
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            // javascriptEnabled: true,
+                            // sourceMap: true,
+                        },
+                    },
+                    {
+                        loader: 'less-loader',
+                        options: {
+                            // javascriptEnabled: true,
+                        },
+                    },
+                ],
+            },{
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                     {
