@@ -36,6 +36,10 @@ const Footer = React.memo(() => {
                 <a href="https://www.facebook.com/profile.php?id=100014047924814" className={style.Wrapper}>
                     <img src={'/svg/services/facebook.svg'} className={style.PhoneIcon}/>
                 </a>
+
+                <a href="https://www.tiktok.com/@atlas.shoulders" target={'_blank'}>
+                    <img src={'/svg/services/tiktok.svg'} className={style.PhoneIcon}/>
+                </a>
             </div>
         </div>
     </div>;

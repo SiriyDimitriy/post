@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import style from '../styles/contacts.less';
-import Map from '../components/Map';
+// import Map from '../components/Map';
 import {config} from '../utils/domUtils';
 
 @connect(store => ({
@@ -56,7 +56,7 @@ class ContactsPage extends React.Component {
             </div>
         </div>
             <div>
-                {contacts.map && <div className={style.map}><Map map={contacts.map}/></div>}
+                {/*{contacts.map && <div className={style.map}><Map map={contacts.map}/></div>}*/}
             </div>
         </div>
     }

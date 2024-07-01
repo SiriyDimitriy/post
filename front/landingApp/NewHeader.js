@@ -11,7 +11,7 @@ const NewHeader = React.memo(({ config }) => {
         label: 'Зроблено з ненавистю до рашистів',
         image: '/svg/services/explosion.svg',
     },{
-        label: '50% від виробництва передається безкоштовно за запитом від ВЧ (фінансує виробництво той, хто може)',
+        label: 'Безкоштовна доставка',
         image: '/svg/services/tax.svg',
     },{
         label: 'Розробка та постійне вдосконалення',
@@ -127,12 +127,20 @@ const NewHeader = React.memo(({ config }) => {
                         <img src={'/svg/services/signal.svg'} className={style.PhoneIcon}/>
                     </a>
 
-                    <a href="https://www.facebook.com/profile.php?id=100014047924814">
+                    <a href="https://www.facebook.com/profile.php?id=100014047924814" target={'_blank'}>
                         <img src={'/svg/services/facebook.svg'} className={style.PhoneIcon}/>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@atlas.shoulders" target={'_blank'}>
+                        <img src={'/svg/services/tiktok.svg'} className={style.PhoneIcon}/>
                     </a>
                 </div>
                 {/*<Button className={style.BackCall} onClickHandler={openModal}>Зворотній дзвінок</Button>*/}
             </div>
+
+            <h2 className={style.AppHeader}>Телескопічні щогли "Плечі Атласа"</h2>
+
+            <div className={style.Retail}>{'Виготовлення телескопічних щогл різної довжини та конфігурації'}</div>
 
             <div className={style.SaleDepartment}>
                 <img src={'/svg/services/megaphone.svg'} className={style.MegaphoneIcon}/>
@@ -145,10 +153,6 @@ const NewHeader = React.memo(({ config }) => {
                 <div>Креслення і опис конструкції  щогли є об'єктом авторського права, що зареєстроване в Україні за свідоцтвом № 120675 від 20.06.2023. Загальна конструкція щогли, її оригіналні деталі та вузли є об'єктом інтелектуальної власності - корисною моделлю України, на який подана заявка № u 2023 04578 від 28.09.2023, що буде засвічдено свідоцтвом України на корисну модель "Розкладна мобільна телескопічна щогла". Будь-які факти неправомірного використання конструкції ціє щогли  переслідуватимуться відповідно до чинного законодавства України, в т.ч. за допомогою МВС, АМК та судових органів.</div>
                 <div className={style.Delimiter}/>
             </div>
-
-            <h2 className={style.AppHeader}>Телескопічні щогли "Плечі Атласа"</h2>
-
-            <div className={style.Retail}>{'Виготовлення телескопічних щогл різної довжини та конфігурації'}</div>
 
             <div className={style.PromoCards}>
                 {promoCards.map(({ label, image }) => <div key={label} className={style.PromoCard}>
