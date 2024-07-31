@@ -22,6 +22,9 @@ const LandingApp = React.memo(({ landingMode }) => {
     const priceConfig = {
         siteName: 'Водостока.НЕТ',
         prices: [{
+            product: "Телескопічна щогла AS-13000",
+            price: "18000 грн"
+        }, {
             product: "Телескопічна щогла AS-11500",
             price: "17000 грн"
         }, {
