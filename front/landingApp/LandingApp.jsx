@@ -52,7 +52,16 @@ const LandingApp = React.memo(({ landingMode }) => {
         motivationMessage: "Якщо у Вас ще немає металочерепиці, тоді Вам до нас!",
         logoImg: "/images/landing/landing-logo.jpg",
         mainImg: "/images/landing/roof-main.png",
-        products: [ {
+        products: [{
+            label: 'Телескопічна \nщогла 13000',
+            image: '/images/catalog/post-13000.jpg',
+            table: {
+                'Транспортні розміри': '1750х250х250мм',
+                'Максимальна робоча висота': '13м',
+                'Матеріали секцій': 'Алюміній АД31',
+                'Вага': '15.5кг',
+            },
+        }, {
             label: 'Телескопічна \nщогла 11500',
             image: '/images/catalog/post-11500.jpg',
             table: {
