@@ -22,6 +22,9 @@ const LandingApp = React.memo(({ landingMode }) => {
     const priceConfig = {
         siteName: 'Водостока.НЕТ',
         prices: [{
+            product: "Телескопічна щогла AS-14500",
+            price: "20000 грн"
+        },{
             product: "Телескопічна щогла AS-13000",
             price: "18000 грн"
         }, {
@@ -56,6 +59,15 @@ const LandingApp = React.memo(({ landingMode }) => {
         logoImg: "/images/landing/landing-logo.jpg",
         mainImg: "/images/landing/roof-main.png",
         products: [{
+            label: 'Телескопічна \nщогла 14500',
+            image: '/images/catalog/post-14500.jpg',
+            table: {
+                'Транспортні розміри': '1750х250х250мм',
+                'Максимальна робоча висота': '14.5м',
+                'Матеріали секцій': 'Алюміній АД31',
+                'Вага': '18.5кг',
+            },
+        },{
             label: 'Телескопічна \nщогла 13000',
             image: '/images/catalog/post-13000.jpg',
             table: {
