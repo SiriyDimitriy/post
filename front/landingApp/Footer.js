@@ -19,12 +19,11 @@ const Footer = React.memo(() => {
                 <span>без вихідних, 24/7</span>
             </div>
 
+            <a href="mailto:siriy_dimitriy@ukr.net" className={style.Mail}>
+                siriy_dimitriy@ukr.net
+            </a>
+
             <div className={style.ContactPhones}>
-
-                <a href="mailto:siriy_dimitriy@ukr.net" className={style.Mail}>
-                    siriy_dimitriy@ukr.net
-                </a>
-
                 <a href="https://api.whatsapp.com/send?phone=+380955291236" className={style.Wrapper}>
                     <img src={'/svg/services/whatsapp.svg'} className={style.PhoneIcon}/>
                 </a>

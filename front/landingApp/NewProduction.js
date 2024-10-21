@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import style from '../styles/landingApp/newProduction.less';
 import Title from './components/Title';
+import {Link} from 'react-router-dom';
 
 const responsive = {
     0: { items: 1 },
@@ -51,9 +52,9 @@ const NewProduction = React.memo(({ config, priceConfig }) => {
                         </div>}
                     </div>
                     : <div className={style.MetalTails}>
-                        {products && products.map(({ label, table, image }) => <div key={label}
+                        {products && products.map(({ label, table, image, id }) => <div key={label}
                                                                                     className={style.MetalTail}>
-                            <div className={style.LabelBlock}>
+                            <Link to={`/items/${id}`} className={style.LabelBlock}>
                                 <img src={image} className={style.Image}/>
 
                                 <span className={style.Label}>{label}</span>
@@ -61,7 +62,11 @@ const NewProduction = React.memo(({ config, priceConfig }) => {
                                     <polygon points="0,20 100,0 100,57 0,57"/>
                                     <line x1="0" y1="20" x2="100" y2="0" stroke="black" strokeWidth="0.25"/>
                                 </svg>
-                            </div>
+
+                                <span className={style.item_link}>
+                                    Детальніше ...
+                                </span>
+                            </Link>
                             <div className={style.Characteristics}>
                                 {Object.keys(table).map(property => <div key={property} className={style.Row}>
                                     <div className={style.AllAvailablePlace}>{property}</div>

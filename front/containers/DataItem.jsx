@@ -35,15 +35,15 @@ class DataItemPage extends React.Component {
         };
     }
 
-    componentDidMount() {
-        if (!this.props.items.length) {
-            this.props.fetchCatalog();
-        } else {
-            this.fillInitialState(this.props);
-        }
-        this.props.fetchColors();
-        this.props.fetchAdditionalElements();
-    }
+    // componentDidMount() {
+    //     if (!this.props.items.length) {
+    //         this.props.fetchCatalog();
+    //     } else {
+    //         this.fillInitialState(this.props);
+    //     }
+    //     this.props.fetchColors();
+    //     this.props.fetchAdditionalElements();
+    // }
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.items !== this.props.items) {
@@ -51,12 +51,12 @@ class DataItemPage extends React.Component {
         }
     }
 
-    fillInitialState(props) {
-        const item = props.items.find(item => item.id === props.location.pathname.substring('/items/'.length));
-        const chosenPriceCard = item.price_cards[0];
-        this.setState({item, chosenPriceCard});
-        markVisited(item);
-    }
+    // fillInitialState(props) {
+    //     const item = props.items.find(item => item.id === props.location.pathname.substring('/items/'.length));
+    //     const chosenPriceCard = item.price_cards[0];
+    //     this.setState({item, chosenPriceCard});
+    //     markVisited(item);
+    // }
 
     descriptionTabContent() {
         const {item} = this.state;
