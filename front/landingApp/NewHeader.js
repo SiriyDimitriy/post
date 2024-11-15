@@ -111,9 +111,7 @@ const NewHeader = React.memo(({ config }) => {
 
             <div className={style.Contacts}>
                 <div className={style.ContactName}>
-                    <a href="/metalTail.html">
                         <img className={style.LogoImage} src={'/images/post-logo.png'}/>
-                    </a>
                 </div>
                 <h1 className={style.ContactName}>
                     Телескопічні мачти "Плечі Атласа"

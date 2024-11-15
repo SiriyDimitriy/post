@@ -13,22 +13,22 @@ import ColorsTab from "./ColorsTab";
 import AccessoriesTab from "./AccessoriesTab";
 
 @withRouter
-@connect(store => ({
-    items: store.items,
-    phone: store.contacts.phones && store.contacts.phones[0],
-    itemPropertiesNames: store.itemPropertiesNames,
-    colors: store.colors,
-    additionalElements: store.additionalElements
-}), {
-    fetchCatalog,
-    fetchColors,
-    fetchAdditionalElements
-})
+// @connect(store => ({
+//     items: store.items,
+//     phone: store.contacts.phones && store.contacts.phones[0],
+//     itemPropertiesNames: store.itemPropertiesNames,
+//     colors: store.colors,
+//     additionalElements: store.additionalElements
+// }), {
+//     fetchCatalog,
+//     fetchColors,
+//     fetchAdditionalElements
+// })
 class DataItemPage extends React.Component {
 
     constructor(props) {
         super(props);
-        this.renderPrice = this.renderPrice.bind(this);
+        // this.renderPrice = this.renderPrice.bind(this);
         this.state = {
             item: null,
             chosenPriceCard: null
@@ -45,11 +45,11 @@ class DataItemPage extends React.Component {
     //     this.props.fetchAdditionalElements();
     // }
 
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.items !== this.props.items) {
-            this.fillInitialState(nextProps);
-        }
-    }
+    // componentWillReceiveProps(nextProps) {
+    //     if (nextProps.items !== this.props.items) {
+    //         this.fillInitialState(nextProps);
+    //     }
+    // }
 
     // fillInitialState(props) {
     //     const item = props.items.find(item => item.id === props.location.pathname.substring('/items/'.length));
@@ -111,44 +111,45 @@ class DataItemPage extends React.Component {
     }
 
     render() {
-        const {item} = this.state;
-        if (item === null) {
-            return null;
-        }
+        // const {item} = this.state;
+        // if (item === null) {
+        //     return null;
+        // }
 
-        const tabs = [
-            {
-                name: 'Цены',
-                content: this.pricesTabContent()
-            },
-            {
-                name: 'Описание',
-                content: this.descriptionTabContent()
-            },
-            {
-                name: 'Характеристики',
-                content: this.featuresTabContent()
-            },
-            {
-                name: 'Цвета',
-                content: this.colorsTabContent()
-            },
-            {
-                name: 'Доборные элементы',
-                content: this.accessoriesTabContent()
-            },
-        ];
+        // const tabs = [
+        //     {
+        //         name: 'Цены',
+        //         content: this.pricesTabContent()
+        //     },
+        //     {
+        //         name: 'Описание',
+        //         content: this.descriptionTabContent()
+        //     },
+        //     {
+        //         name: 'Характеристики',
+        //         content: this.featuresTabContent()
+        //     },
+        //     {
+        //         name: 'Цвета',
+        //         content: this.colorsTabContent()
+        //     },
+        //     {
+        //         name: 'Доборные элементы',
+        //         content: this.accessoriesTabContent()
+        //     },
+        // ];
 
         return <div className={style.dataItem}>
-            <div className={style.container}>
-                <ItemSlider images={item.images}/>
-                <div className={style.description}>
-                    <div className={style.descriptionCaption}>{item.name}</div>
-                    {this.renderPrice()}
-                    {/*{item.promo && <div className={[style.descriptionBlock, style.promo].join(' ')}>{item.promo}</div>}*/}
-                </div>
-            </div>
-            <Tabs tabs={tabs}/>
+            {/*<div className={style.container}>*/}
+            {/*    <ItemSlider images={item.images}/>*/}
+            {/*    <div className={style.description}>*/}
+            {/*        <div className={style.descriptionCaption}>{item.name}</div>*/}
+            {/*        {this.renderPrice()}*/}
+            {/*        /!*{item.promo && <div className={[style.descriptionBlock, style.promo].join(' ')}>{item.promo}</div>}*!/*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            {/*<Tabs tabs={tabs}/>*/}
+            СТОРІНКА В РОБОТІ
         </div>;
     }
 }

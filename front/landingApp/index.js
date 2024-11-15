@@ -10,7 +10,7 @@ import DataItemPage from '../containers/DataItem';
 ReactDOM.render(
     <Provider store={store}>
         <HashRouter>
-            <LandingApp/>
+            {/*<LandingApp/>*/}
             <Switch>
                 <Route exact path='/'
                        component={LandingApp}/>
